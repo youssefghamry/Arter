@@ -1,0 +1,486 @@
+/*
+Theme Name: arter
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+
+/* RTL */
+
+body {
+	direction: rtl !important;
+	text-align: right;
+	overflow-x: hidden;
+	unicode-bidi: embed;
+}
+
+@media(min-width:1032px) {
+	.art-app .art-app-wrapper .art-app-container .art-menu-bar {
+		left: -150px;
+		right: auto;
+	}
+	.art-app .art-app-wrapper .art-app-container .art-content {
+		padding-right: 0;
+		padding-left: 80px;
+	}
+}
+
+.art-menu-bar .art-current-page {
+	right: -62px;
+	left: auto;
+}
+
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+	letter-spacing: 0 !important;
+}
+
+.art-counter-frame .art-counter-box {
+	text-align: right;
+}
+
+.art-link.art-w-chevron {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.art-link.art-w-chevron:after {
+	transform: translateX(-5px);
+	-webkit-transform: translateX(-5px);
+	content: '\f053';
+	left: 0;
+	right: auto;
+}
+
+.art-banner .art-banner-overlay .art-banner-photo {
+	left: 30px;
+	right: auto;
+}
+
+.txt-rotate .wrap {
+	border-left: 1px solid #aaa;
+	border-right: none !important;
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.art-price .art-price-body .art-price-cost .art-number sup {
+	left: 0;
+	right: auto;
+}
+
+.art-price .art-price-body .art-price-list ul li:before {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+.art-price.art-popular-price:before {
+	left: -72px;
+	right: auto;
+	transform: rotate(-45deg);
+}
+
+.art-link.art-w-chevron:hover:after {
+	-webkit-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.art-testimonial .testimonial-body .art-testimonial-face {
+	left: 30px;
+	right: auto;
+}
+
+.footer div:nth-child(2) {
+	text-align: left;
+}
+
+.art-info-bar .art-hard-skills .art-hard-skills-item .art-line-progress .progressbar-text {
+	text-align: left;
+}
+
+.art-info-bar .art-knowledge-list li::before {
+	margin-left: 10px;
+}
+
+.art-number span:nth-of-type(2) {
+	float: right;
+}
+
+.art-contact-form label {
+	right: 0;
+	left: auto;
+}
+
+.art-form-field input {
+	padding-right: 65px;
+	padding-left: 15px;
+	text-align: right;
+}
+
+.art-form-field textarea {
+	text-align: right;
+}
+
+.art-form-field textarea {
+	border-right: solid 50px #20202a;
+	border-left: none;
+}
+
+.art-menu-bar nav .main-menu .menu-item {
+	transform: translateX(-60px);
+}
+
+.art-menu-bar.art-active nav .menu-item {
+	-webkit-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.art-slider-nav .fa-chevron-right:before {
+	content: "\f053";
+}
+
+.art-slider-nav .fa-chevron-left:before {
+	content: "\f054";
+}
+
+
+/* @media(max-width:1032px){ */
+
+.art-app .art-app-wrapper .art-app-container .art-menu-bar.art-active {
+	-webkit-transform: translateX(150px);
+	transform: translateX(150px);
+}
+
+
+/* } */
+
+@media(min-width:1032px) {
+	.art-app .art-app-wrapper .art-app-container .art-content.art-active {
+		-webkit-transform: translateX(150px);
+		transform: translateX(150px);
+	}
+}
+
+.art-menu-bar nav .main-menu .menu-item.menu-item-has-children:after {
+	content: '\f053';
+	left: 30px;
+	right: auto;
+}
+
+.art-menu-bar nav .main-menu .menu-item:hover.menu-item-has-children:after {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.art-menu-bar nav .main-menu .menu-item .sub-menu {
+	padding-right: 0;
+}
+
+@media(max-width:1032px) {
+	.art-app .art-app-wrapper .art-app-container .art-info-bar {
+		right: -290px;
+		left: auto;
+	}
+	.art-app .art-app-wrapper .art-app-container .art-info-bar.art-active {
+		-webkit-transform: translateX(-290px);
+		transform: translateX(-290px);
+	}
+	.art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header .art-info-bar-btn {
+		margin-right: auto;
+		margin-left: 0;
+	}
+	.art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header .art-info-bar-btn {
+		-webkit-transform: translateX(-70px);
+		transform: translateX(-70px);
+	}
+	/*  */
+	.art-app .art-app-wrapper .art-app-container .art-menu-bar {
+		left: -150px;
+		right: auto;
+	}
+	.art-app .art-app-wrapper .art-app-container .art-menu-bar {
+		left: -230px;
+		right: auto;
+	}
+	.art-app .art-app-wrapper .art-app-container .art-menu-bar .art-menu-bar-btn {
+		-webkit-transform: translateX(80px);
+		transform: translateX(80px);
+	}
+	.art-app .art-app-wrapper .art-app-container .art-menu-bar.art-active {
+		-webkit-transform: translateX(230px);
+		transform: translateX(230px);
+	}
+}
+
+.art-skills-progress svg,
+.art-preloader-load svg {
+	transform: rotateY(180deg);
+}
+
+.art-cirkle-progress svg {
+	transform: rotateY(360deg);
+}
+
+.art-info-bar .art-knowledge-list {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.art-pagination>.art-link:last-child {
+	float: left !important;
+}
+
+.art-pagination>.art-link:first-child {
+	float: right !important;
+}
+
+.art-link.art-left-link.art-w-chevron::after {
+	content: '\f053';
+	right: 0;
+	left: auto;
+	transform: rotateY(180deg);
+}
+
+.art-el-suptitle span {
+	font-style: normal;
+	font-weight: lighter;
+}
+
+.art-portfolio-item-frame .art-item-hover {
+	right: 30px;
+	left: auto;
+}
+
+.art-link {
+	margin-left: 15px;
+	margin-right: 0;
+}
+
+.art-grid .art-grid-item {
+	-webkit-transition-property: right, top, -webkit-transform, opacity;
+	-moz-transition-property: right, top, -moz-transform, opacity;
+	-ms-transition-property: right, top, -ms-transform, opacity;
+	-o-transition-property: right, top, -o-transform, opacity;
+	transition-property: right, top, transform, opacity;
+}
+
+.comment-info span.comment-reply {
+	left: 0;
+	right: auto;
+}
+
+.comment-reply-link::after {
+	margin-right: 8px;
+	margin-left: 0;
+}
+
+.post-comments .post-comment .image {
+	float: right;
+}
+
+.post-comments .post-comment .desc {
+	margin-right: 100px;
+	margin-left: auto;
+}
+
+.single-post-text figure .wp-caption-text,
+.comment-text figure .wp-caption-text,
+.gallery-caption,
+.bypostauthor {
+	font-style: normal;
+}
+
+.art-banner-back {
+	margin-left: auto;
+	margin-right: 5%;
+}
+
+.comment-respond .title_inner small {
+	left: 0;
+	right: auto;
+}
+
+.single-post-text ul>li, .single-post-text ol>li, .comment-text ul>li, .comment-text ol>li {
+	padding: 0 14px 0 0;
+}
+
+.single-post-text ul>li:before, .comment-text ul>li:before {
+	left: auto;
+	right: 0;
+}
+
+.art-link.art-left-link.art-w-chevron:hover:after {
+	-webkit-transform: translateX(-5px) rotateY(180deg);
+	transform: translateX(-5px) rotateY(180deg);
+}
+
+.art-link.art-w-chevron:after {
+	left: 0;
+	right: auto;
+}
+
+.art-link.art-left-link.art-w-chevron:after {
+	left: auto;
+	right: 0;
+}
+
+.default--scrolling .art-app .art-app-wrapper .art-app-container .art-content {
+	padding-left: 80px;
+	padding-right: 290px;
+}
+.default--scrolling .art-app .art-app-wrapper .art-app-container .art-menu-bar-fix {
+	right: auto;
+	left: 0;
+}
+.default--scrolling .art-app .art-app-wrapper .art-app-container .art-menu-bar {
+	right: auto;
+	left: auto;
+}
+@media (max-width: 1032px) {
+	.default--scrolling .art-app .art-app-wrapper .art-app-container .art-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.default--scrolling .art-app .art-app-wrapper .art-app-container .art-menu-bar-fix {
+		right: auto;
+		left: -80px;
+	}
+}
+
+/*
+	New Woocommerce Styles
+*/
+
+.art-menu-bar .cart-btn .cart-icon .cart-count {
+    left: auto;
+	right: 20px;
+}
+
+.art-menu-bar .cart-btn .cart-widget {
+	right: auto;
+	left: 80px;
+}
+
+.woocommerce ul.cart_list, 
+.woocommerce ul.product_list_widget,
+ul.cart_list li, 
+ul.product_list_widget {
+	text-align: right;
+}
+
+.woocommerce ul.cart_list li img, 
+.woocommerce ul.product_list_widget li img,
+ul.cart_list li img, 
+ul.product_list_widget li img {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button
+.woocommerce-mini-cart__buttons #respond input#submit, 
+.woocommerce-mini-cart__buttons a.button, 
+.woocommerce-mini-cart__buttons button.button, 
+.woocommerce-mini-cart__buttons input.button {
+    margin-right: 0;
+	margin-left: 15px;
+}
+
+.woocommerce-mini-cart__buttons #respond input#submit, 
+.woocommerce-mini-cart__buttons a.button, 
+.woocommerce-mini-cart__buttons button.button, 
+.woocommerce-mini-cart__buttons input.button {
+	float: right;
+}
+
+.woocommerce ul.products li.product .price ins {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.woocommerce ul.products li.product .price > span {
+	margin-right: 0;
+}
+
+.woocommerce ul.products li.product .button.add_to_cart_button:before {
+	margin-right: 0;
+	margin-left: 10px;
+	left: auto;
+	right: 0;
+}
+
+.woocommerce #content div.product div.images, 
+.woocommerce div.product div.images, 
+.woocommerce-page #content div.product div.images, 
+.woocommerce-page div.product div.images {
+	float: right;
+}
+
+.woocommerce #content div.product div.summary, 
+.woocommerce div.product div.summary, 
+.woocommerce-page #content div.product div.summary, 
+.woocommerce-page div.product div.summary {
+	padding-right: 30px;
+	padding-left: 0;
+	float: left;
+}
+
+.woocommerce .product span.onsale {
+	left: auto;
+	right: 15px;
+}
+
+.woocommerce div.product p.price del, 
+.woocommerce div.product span.price del {
+	margin-left: 5px;
+}
+
+.woocommerce .woocommerce-product-rating .star-rating {
+	margin: 0 0 0 5px;
+}
+
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+	float: right;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+	margin: 0 66px 0 0;
+}
+
+.comment_container .star-rating {
+    right: auto;
+    left: 0;
+}
+
+.woocommerce-account .addresses .title h3,
+.addresses .title h3 {
+	float: right;
+}
+
+.addresses .title .edit,
+.woocommerce-account .addresses .title .edit {
+	float: left;
+}
+
+@media (max-width: 767px) {
+	.art-menu-bar .cart-btn {
+		right: -130px;
+		left: auto;
+	}
+}
