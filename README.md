@@ -14,7 +14,7 @@
 
 ## Watch an explanatory video
 
-https://youtu.be/lk91dp1noPw
+https://youtu.be/FUkH1D4mYbA
 
 ## Some project's views on devices
 
