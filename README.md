@@ -12,14 +12,23 @@
 
 - Arter is a Resume WordPress Theme is best suited for developer, designer, programmer, freelancer, artist, coder, photography or any other digital professions. Modern and creative theme design that will help you create a web presence. Includes: Dark & Light versions, WooCommerce support, RTL support, One page & Multi page, Powerful Portfolio & Blog, Elementor Page Builder – No coding skills needed, creating online resume and CV website should no longer be a difficult.
 
+## Watch an explanatory video
+
+https://youtu.be/lk91dp1noPw
 
 ## Some project's views on devices
 
 
 
-(img/1.png)
 
-(img/2.png)
+ <img src="https://raw.githubusercontent.com/youssefghamry/Arter/main/img/1.png">
+ 
+ ## 1
+  <img src="https://raw.githubusercontent.com/youssefghamry/Arter/main/img/2.png">
+## 2
+  <img src="https://raw.githubusercontent.com/youssefghamry/Arter/main/img/home.png">
+## 3
+
 
 ## Features Overview
 
